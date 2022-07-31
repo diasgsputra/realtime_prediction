@@ -73,7 +73,7 @@ class koneksi :
         sql = ("INSERT INTO loghujan"
             "(id_alat,waktu,t,h,aero,speed,ldr,hujan,ch,note,reset)"
             " VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s,%s,%s)")
-        val = ("C001",now, t, h, 0,0,895,860,ch,"ok",1)
+        val = ("C002",now, t, h, 0,0,895,860,ch,"ok",1)
         mycursor.execute(sql, val)
 
         mydb.commit()
@@ -94,5 +94,5 @@ class koneksi :
             sum_menit_h = 0.0
             sum_menit_t = 0.0
             sum_menit_ch = 0.0
-            i=0
+            i=0;
         
